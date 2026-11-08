@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Akash – First-year Engineering Student at DSATM, CSE Cyber Security. Aspiring Cybersecurity Professional and Technology Enthusiast." />
+  <meta name="keywords" content="Akash, portfolio, cybersecurity, engineering student, DSATM, Python, C programming, web development" />
+  <meta name="author" content="Akash" />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Akash | Portfolio – Engineering Student & Cybersecurity Enthusiast" />
+  <meta property="og:description" content="First-year CSE Cyber Security student at DSATM, passionate about ethical hacking, AI, and web development." />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <title>Akash | Portfolio – Engineering Student & Cybersecurity Enthusiast</title>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================= -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Akash – go to home">
+        <span class="logo-bracket">&lt;</span>Akash<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"         class="nav-link" data-section="home">Home</a></li>
+        <li><a href="#about"        class="nav-link" data-section="about">About</a></li>
+        <li><a href="#education"    class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#skills"       class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects"     class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+        <li><a href="#contact"      class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================= -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <!-- Animated background blobs -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Left: Text -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Opportunities
+        </div>
+
+        <h1 class="hero-title">
+          Hello, I'm<br />
+          <span class="gradient-text">Akash</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Engineering Student &nbsp;|&nbsp; Aspiring Cybersecurity Professional &nbsp;|&nbsp; Technology Enthusiast
+        </p>
+
+        <p class="hero-intro">
+          A first-year B.E. Computer Science (Cyber Security) student at DSATM, Bengaluru.
+          I'm on a mission to master programming, ethical hacking, and AI — one line of code at a time.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Explore My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">2</span>
+            <span class="stat-label">Languages<br/>Known</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value">4</span>
+            <span class="stat-label">Spoken<br/>Languages</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value">1st</span>
+            <span class="stat-label">Year<br/>Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Photo -->
+      <div class="hero-photo">
+        <div class="photo-wrapper">
+          <div class="photo-ring" aria-hidden="true"></div>
+          <div class="photo-ring photo-ring-2" aria-hidden="true"></div>
+          <img
+            src="assets/profile.jpg"
+            alt="Profile photo of Akash"
+            class="profile-img"
+            onerror="this.onerror=null; this.src=''; this.parentElement.classList.add('no-photo');"
+          />
+          <!-- Fallback avatar shown via CSS when image fails -->
+          <div class="avatar-fallback" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><circle cx="50" cy="38" r="20" fill="#7c3aed"/><ellipse cx="50" cy="80" rx="30" ry="18" fill="#7c3aed"/></svg>
+          </div>
+        </div>
+        <div class="photo-label">
+          <span class="label-icon">🛡️</span>
+          <span>CSE – Cyber Security</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+      <div class="scroll-dot"></div>
+    </a>
+  </section>
+
+  <!-- =========================================================
+       ABOUT SECTION
+  ========================================================= -->
+  <section class="section about-section" id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">My journey into technology and what drives me forward.</p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Text -->
+        <div class="about-text">
+          <p>
+            Hi! I'm <strong>Akash</strong>, a first-year B.E. Computer Science (Cyber Security) student at
+            <strong>Dayananda Sagar Academy of Technology and Management (DSATM)</strong>, Bengaluru.
+            My journey into technology began with a genuine curiosity about how systems work — and more
+            importantly, how they can be protected.
+          </p>
+          <p>
+            Currently, I'm building my programming foundations with <strong>C</strong> and <strong>Python</strong>,
+            and diving into web development with HTML, CSS, and JavaScript. Every line of code I write brings
+            me closer to my goal of becoming a skilled <strong>cybersecurity professional</strong>.
+          </p>
+          <p>
+            I'm fascinated by the world of <strong>ethical hacking</strong> and <strong>artificial intelligence</strong>
+            — fields that are shaping the future of technology. I believe the best way to learn is by
+            building real things, breaking them, and understanding why they work. That mindset keeps me
+            motivated to push through challenges and keep improving.
+          </p>
+          <p>
+            Outside of tech, I'm a multilingual individual who speaks <strong>Kannada, Tamil, Hindi,</strong>
+            and <strong>English</strong>. I value hard work, curiosity, and continuous growth — qualities
+            I carry into everything I do, both in academics and personal projects.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎓</span>
+              <div>
+                <strong>DSATM, Bengaluru</strong>
+                <small>B.E. CSE – Cyber Security</small>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🛡️</span>
+              <div>
+                <strong>Aspiring Ethical Hacker</strong>
+                <small>Cybersecurity Enthusiast</small>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">💡</span>
+              <div>
+                <strong>Curious Learner</strong>
+                <small>Always Building & Exploring</small>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌐</span>
+              <div>
+                <strong>4 Languages</strong>
+                <small>Kannada · Tamil · Hindi · English</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Info Cards -->
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-card-icon">🎯</div>
+            <h3>Career Goal</h3>
+            <p>To become a skilled cybersecurity professional, contribute to ethical hacking, and build impactful technology solutions.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">📚</div>
+            <h3>Currently Learning</h3>
+            <p>HTML, CSS, JavaScript, Web Development, and deepening my knowledge of Python and C programming.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🔥</div>
+            <h3>What Drives Me</h3>
+            <p>The challenge of problem-solving, the excitement of breaking and understanding systems, and the vision of a secure digital world.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-card-icon">🚀</div>
+            <h3>Looking Forward To</h3>
+            <p>Real-world projects, internships in cybersecurity or AI, and collaborating with like-minded tech enthusiasts.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       EDUCATION SECTION
+  ========================================================= -->
+  <section class="section education-section" id="education" aria-label="Education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Academic Journey</span>
+        <h2 class="section-title">Edu<span class="gradient-text">cation</span></h2>
+        <p class="section-subtitle">The institutions that shaped my foundation in science and technology.</p>
+      </div>
+
+      <!-- Toggle scores button -->
+      <div class="scores-toggle-wrapper">
+        <button class="btn-toggle-scores" id="toggleScores" aria-pressed="false">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          Show Academic Scores
+        </button>
+        <span class="toggle-hint">Scores are hidden by default</span>
+      </div>
+
+      <!-- Timeline -->
+      <div class="education-timeline">
+
+        <!-- DSATM -->
+        <article class="timeline-item" data-aos="fade-up">
+          <div class="timeline-dot">
+            <span class="dot-icon">🎓</span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year current-badge">Currently Pursuing</span>
+                <span class="timeline-year-range">2026 – Present</span>
+              </div>
+              <div class="timeline-logo-placeholder" aria-hidden="true">DSATM</div>
+            </div>
+            <h3 class="timeline-title">B.E. – Computer Science & Engineering (Cyber Security)</h3>
+            <p class="timeline-institution">Dayananda Sagar Academy of Technology and Management</p>
+            <p class="timeline-location">📍 Bengaluru, Karnataka</p>
+            <p class="timeline-desc">
+              Pursuing my Bachelor of Engineering with a specialisation in Cyber Security.
+              Building strong foundations in programming, networking, operating systems, and security concepts.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Cyber Security</span>
+              <span class="tag">CSE</span>
+              <span class="tag">First Year</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2nd PUC -->
+        <article class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="timeline-dot">
+            <span class="dot-icon">📘</span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year">Completed</span>
+                <span class="timeline-year-range">2024 – 2026</span>
+              </div>
+              <div class="timeline-logo-placeholder" aria-hidden="true">PUC</div>
+            </div>
+            <h3 class="timeline-title">2nd PUC – Science (PCMB)</h3>
+            <p class="timeline-institution">Wisdom Care PU College</p>
+            <p class="timeline-location">📍 Karnataka</p>
+            <p class="timeline-desc">
+              Completed Pre-University Course with a focus on Physics, Chemistry, Mathematics, and Biology.
+              This laid a strong scientific groundwork for my engineering education.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Science</span>
+              <span class="tag">2026</span>
+            </div>
+            <!-- Hidden score -->
+            <div class="score-reveal hidden" id="score-puc" aria-live="polite">
+              <div class="score-card">
+                <span class="score-label">Academic Score</span>
+                <span class="score-value">549 / 600</span>
+                <span class="score-percent">91.5%</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10th -->
+        <article class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-dot">
+            <span class="dot-icon">📗</span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div class="timeline-meta">
+                <span class="timeline-year">Completed</span>
+                <span class="timeline-year-range">Up to 2024</span>
+              </div>
+              <div class="timeline-logo-placeholder" aria-hidden="true">10th</div>
+            </div>
+            <h3 class="timeline-title">10th Standard – SSLC</h3>
+            <p class="timeline-institution">Vidyanjali High School</p>
+            <p class="timeline-location">📍 Karnataka</p>
+            <p class="timeline-desc">
+              Completed SSLC examinations under the Karnataka State Board. Developed a strong
+              interest in science and mathematics which guided my choice of engineering.
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">SSLC</span>
+              <span class="tag">Karnataka Board</span>
+            </div>
+            <!-- Hidden score -->
+            <div class="score-reveal hidden" id="score-10th" aria-live="polite">
+              <div class="score-card">
+                <span class="score-label">Academic Score</span>
+                <span class="score-value">519 / 625</span>
+                <span class="score-percent">83.0%</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- end timeline -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS SECTION
+  ========================================================= -->
+  <section class="section skills-section" id="skills" aria-label="Technical Skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Work With</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">My current toolkit — growing every day as I learn and build.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- C Programming -->
+        <article class="skill-card" aria-label="C Programming skill">
+          <div class="skill-icon skill-c">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="none"/><text x="8" y="36" font-family="monospace" font-size="30" font-weight="bold" fill="#00bcd4">C</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">C Programming</h3>
+            <span class="skill-level level-learning">📖 Learning</span>
+            <p class="skill-desc">Building fundamentals of programming — variables, loops, functions, arrays, and pointers.</p>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="35" aria-label="Approximately beginner level"></div>
+          </div>
+          <span class="skill-stage">Foundation Stage</span>
+        </article>
+
+        <!-- Python -->
+        <article class="skill-card" aria-label="Python skill">
+          <div class="skill-icon skill-python">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="none"/><text x="4" y="36" font-family="monospace" font-size="22" font-weight="bold" fill="#f7c948">Py</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Python</h3>
+            <span class="skill-level level-learning">📖 Learning</span>
+            <p class="skill-desc">Exploring Python syntax, scripting basics, and its applications in automation and cybersecurity.</p>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="40" aria-label="Approximately beginner level"></div>
+          </div>
+          <span class="skill-stage">Foundation Stage</span>
+        </article>
+
+        <!-- HTML -->
+        <article class="skill-card" aria-label="HTML skill">
+          <div class="skill-icon skill-html">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="none"/><text x="2" y="36" font-family="monospace" font-size="16" font-weight="bold" fill="#e34f26">HTML</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">HTML</h3>
+            <span class="skill-level level-exploring">🌱 Exploring</span>
+            <p class="skill-desc">Learning semantic HTML structure, elements, attributes, and building web page skeletons.</p>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="30" aria-label="Approximately beginner level"></div>
+          </div>
+          <span class="skill-stage">Beginner</span>
+        </article>
+
+        <!-- CSS -->
+        <article class="skill-card" aria-label="CSS skill">
+          <div class="skill-icon skill-css">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="none"/><text x="4" y="36" font-family="monospace" font-size="18" font-weight="bold" fill="#264de4">CSS</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">CSS</h3>
+            <span class="skill-level level-exploring">🌱 Exploring</span>
+            <p class="skill-desc">Discovering styling, layouts, flexbox, and how to make websites look great.</p>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="30" aria-label="Approximately beginner level"></div>
+          </div>
+          <span class="skill-stage">Beginner</span>
+        </article>
+
+        <!-- JavaScript -->
+        <article class="skill-card" aria-label="JavaScript skill">
+          <div class="skill-icon skill-js">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="8" fill="none"/><text x="6" y="36" font-family="monospace" font-size="18" font-weight="bold" fill="#f7df1e">JS</text></svg>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">JavaScript</h3>
+            <span class="skill-level level-exploring">🌱 Exploring</span>
+            <p class="skill-desc">Starting to learn interactivity, DOM manipulation, and making web pages dynamic.</p>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="20" aria-label="Approximately beginner level"></div>
+          </div>
+          <span class="skill-stage">Just Starting</span>
+        </article>
+
+        <!-- Cybersecurity -->
+        <article class="skill-card" aria-label="Cybersecurity Fundamentals skill">
+          <div class="skill-icon skill-cyber">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 4 L40 10 L40 24 C40 33 33 40 24 44 C15 40 8 33 8 24 L8 10 Z" fill="none" stroke="#a855f7" stroke-width="3"/><path d="M17 24 L21 28 L31 18" stroke="#a855f7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="skill-info">
+            <h3 class="skill-name">Cybersecurity Fundamentals</h3>
+            <span class="skill-level level-exploring">🌱 Exploring</span>
+            <p class="skill-desc">Learning core concepts — CIA triad, networking basics, threat types, and security mindset through coursework.</p>
+          </div>
+          <div class="skill-bar-wrap">
+            <div class="skill-bar" data-width="25" aria-label="Approximately beginner level"></div>
+          </div>
+          <span class="skill-stage">Conceptual Stage</span>
+        </article>
+
+      </div>
+
+      <p class="skills-note">
+        <span class="note-icon">ℹ️</span>
+        Progress bars represent my <em>relative learning stage</em>, not expert-level proficiency.
+        I'm proudly a beginner on a growth journey!
+      </p>
+
+      <!-- Interests -->
+      <div class="section-header" style="margin-top: 4rem;">
+        <span class="section-tag">What Excites Me</span>
+        <h2 class="section-title">Areas of <span class="gradient-text">Interest</span></h2>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card">
+          <span class="interest-icon">🕵️</span>
+          <h4>Ethical Hacking</h4>
+          <p>Understanding vulnerabilities to build better defences.</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🛡️</span>
+          <h4>Cybersecurity</h4>
+          <p>Protecting systems, data and people in the digital world.</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🤖</span>
+          <h4>Artificial Intelligence</h4>
+          <p>Fascinated by machine learning and AI-driven solutions.</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">🌐</span>
+          <h4>Web Development</h4>
+          <p>Building beautiful and functional things for the web.</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">💻</span>
+          <h4>Software Development</h4>
+          <p>Writing clean, efficient code that solves real problems.</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">📡</span>
+          <h4>New Technologies</h4>
+          <p>Always curious about what's next in the tech landscape.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS SECTION
+  ========================================================= -->
+  <section class="section projects-section" id="projects" aria-label="Projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Projects I'm working on and planning as I grow my skills.</p>
+      </div>
+
+      <!-- How to add projects note -->
+      <div class="add-project-note" role="note">
+        <span class="note-icon">💡</span>
+        <span>
+          <strong>Developer note:</strong> These are placeholder cards to get you started.
+          To add a real project, edit the <code>projects-grid</code> section in <code>index.html</code>.
+          A guide is included at the bottom of the <code>js/script.js</code> file.
+        </span>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+
+        <!-- Sample Placeholder 1 -->
+        <article class="project-card placeholder-card" aria-label="Sample project placeholder">
+          <div class="project-card-header">
+            <div class="project-icon">🔐</div>
+            <div class="project-status-badge wip">🚧 Coming Soon</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Password Strength Checker</h3>
+            <p class="project-desc">
+              A Python script that evaluates password strength based on length, complexity, and common patterns.
+              <em>(Planned project — not yet built)</em>
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-python">Python</span>
+              <span class="tag tag-cyber">Cybersecurity</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-project disabled" disabled aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </button>
+            <button class="btn-project disabled" disabled aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </button>
+          </div>
+        </article>
+
+        <!-- Sample Placeholder 2 -->
+        <article class="project-card placeholder-card" aria-label="Sample project placeholder">
+          <div class="project-card-header">
+            <div class="project-icon">🧮</div>
+            <div class="project-status-badge wip">🚧 Coming Soon</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Simple Calculator (C)</h3>
+            <p class="project-desc">
+              A command-line calculator written in C that performs basic arithmetic operations.
+              <em>(Planned practice project)</em>
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-c">C</span>
+              <span class="tag tag-cli">CLI</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-project disabled" disabled aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </button>
+            <button class="btn-project disabled" disabled aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Live Demo
+            </button>
+          </div>
+        </article>
+
+        <!-- Sample Placeholder 3 -->
+        <article class="project-card placeholder-card" aria-label="Sample project placeholder">
+          <div class="project-card-header">
+            <div class="project-icon">🌐</div>
+            <div class="project-status-badge wip">🚧 In Progress</div>
+          </div>
+          <div class="project-card-body">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">
+              This very website! Built with HTML, CSS, and JavaScript as my first real web development project.
+              <em>(Currently being developed)</em>
+            </p>
+            <div class="project-tags">
+              <span class="tag tag-html">HTML</span>
+              <span class="tag tag-css">CSS</span>
+              <span class="tag tag-js">JavaScript</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-project disabled" disabled aria-disabled="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </button>
+            <a href="#home" class="btn-project">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              View Site
+            </a>
+          </div>
+        </article>
+
+        <!-- ======================================================
+             ADD YOUR FUTURE PROJECTS HERE.
+             Copy one of the article blocks above, fill in your
+             details, and remove the "placeholder-card" class
+             and "Coming Soon" badge when the project is ready.
+        ====================================================== -->
+
+      </div><!-- end projects-grid -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ACHIEVEMENTS SECTION
+  ========================================================= -->
+  <section class="section achievements-section" id="achievements" aria-label="Achievements and Certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Milestones</span>
+        <h2 class="section-title">Achievements & <span class="gradient-text">Certifications</span></h2>
+        <p class="section-subtitle">My recognitions, awards, and certifications will appear here.</p>
+      </div>
+
+      <!-- Empty State -->
+      <div class="achievements-empty" aria-live="polite">
+        <div class="empty-icon" aria-hidden="true">🏆</div>
+        <h3>Building My Track Record</h3>
+        <p>
+          I'm just getting started on my engineering journey. As I complete courses, win competitions,
+          earn certifications, and achieve milestones — I'll proudly display them here.
+        </p>
+        <p class="empty-sub">
+          <em>No fake achievements here. Only real ones, earned through real effort.</em>
+        </p>
+        <div class="empty-goals">
+          <div class="goal-item">
+            <span class="goal-icon">🎯</span>
+            <span>Earn a cybersecurity certification</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-icon">🎯</span>
+            <span>Complete an online Python / web dev course</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-icon">🎯</span>
+            <span>Participate in a college hackathon</span>
+          </div>
+          <div class="goal-item">
+            <span class="goal-icon">🎯</span>
+            <span>Land my first internship in tech</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Placeholder grid (will be used when achievements are added) -->
+      <div class="achievements-grid hidden" id="achievementsGrid">
+        <!-- Achievement cards will be added here when earned -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION
+  ========================================================= -->
+  <section class="section contact-section" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Whether it's a collaboration, an opportunity, or just saying hi — I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-layout">
+
+        <!-- Contact Details -->
+        <div class="contact-details">
+          <h3 class="contact-details-title">Contact Information</h3>
+
+          <!-- Phone -->
+          <div class="contact-card">
+            <div class="contact-card-icon phone-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42C1.6 2.3 2.47 1.4 3.58 1.4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9A16 16 0 0 0 15 16.09l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Phone</span>
+              <span class="contact-card-value">+91 63602 45759</span>
+            </div>
+            <a href="tel:+916360245759" class="btn-contact call-btn" aria-label="Call Akash">
+              📞 Call
+            </a>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-card">
+            <div class="contact-card-icon email-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">ffakash872266@gmail.com</span>
+            </div>
+            <a href="mailto:ffakash872266@gmail.com" class="btn-contact email-btn" aria-label="Email Akash">
+              ✉️ Email Me
+            </a>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="contact-card">
+            <div class="contact-card-icon whatsapp-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">WhatsApp</span>
+              <span class="contact-card-value">+91 63602 45759</span>
+            </div>
+            <a href="https://wa.me/916360245759" target="_blank" rel="noopener noreferrer" class="btn-contact whatsapp-btn" aria-label="Message Akash on WhatsApp">
+              💬 WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap">
+          <h3 class="contact-form-title">Send a Message</h3>
+          <div class="form-notice" role="note">
+            <span>📌</span>
+            <span>This form currently does not send messages automatically — no backend is connected yet. Use the contact buttons above, or copy my email to reach me directly.</span>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name <span class="required" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="contactName"
+                name="name"
+                class="form-input"
+                placeholder="e.g. Priya Sharma"
+                required
+                autocomplete="name"
+                aria-required="true"
+              />
+              <span class="form-error" id="nameError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email <span class="required" aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="contactEmail"
+                name="email"
+                class="form-input"
+                placeholder="e.g. priya@example.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+              />
+              <span class="form-error" id="emailError" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Message <span class="required" aria-hidden="true">*</span></label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Write your message here..."
+                rows="5"
+                required
+                aria-required="true"
+              ></textarea>
+              <span class="form-error" id="messageError" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div class="form-success hidden" id="formSuccess" role="status" aria-live="polite">
+              ✅ Thanks! Message noted. Please use the contact buttons above to reach me directly.
+            </div>
+          </form>
+        </div>
+
+      </div><!-- end contact-layout -->
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="footer-logo" aria-label="Akash – go to top">
+          <span class="logo-bracket">&lt;</span>Akash<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Engineering Student · Aspiring Cybersecurity Professional</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="footerYear"></span> Akash. Built with 💙 using HTML, CSS &amp; JavaScript.
+        </p>
+        <p class="footer-made">
+          Proudly a beginner — always learning, always building.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
